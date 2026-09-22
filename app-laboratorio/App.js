@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 
 const eu = {
-  nome: 'Débora Dias',
+  nome: 'Débora',
   idade: 17,
   cidade: 'Cascavel',
   nota1: 8,
@@ -25,9 +25,11 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.titulo}>Meu aplicativo</Text>
+
       <Text>Nome: {eu.nome}</Text>
       <Text>Idade: {eu.idade}</Text>
-      Cidade: {eu.cidade}</Text>
+      <Text>Cidade: {eu.cidade}</Text>
       <Text>Nota 1: {eu.nota1}</Text>
       <Text>Nota 2: {eu.nota2}</Text>
       <Text>Média: {media}</Text>
@@ -39,8 +41,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffeca7',
+    backgroundColor: '#454db3ce',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  titulo: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
   },
 });
