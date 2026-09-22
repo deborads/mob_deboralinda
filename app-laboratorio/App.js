@@ -1,9 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+const nome = 'Bora LULA';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Débora Dias Pereira</Text>
+      <Text>{nome}</Text>
     </View>
   );
 }
@@ -11,7 +13,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ff0000',
     alignItems: 'center',
     justifyContent: 'center',
   },
