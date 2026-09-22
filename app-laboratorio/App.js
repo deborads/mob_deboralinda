@@ -27,7 +27,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>Nome: {eu.nome}</Text>
       <Text>Idade: {eu.idade}</Text>
-      <Text>Cidade: {eu.cidade}</Text>
+      Cidade: {eu.cidade}</Text>
       <Text>Nota 1: {eu.nota1}</Text>
       <Text>Nota 2: {eu.nota2}</Text>
       <Text>Média: {media}</Text>
@@ -39,7 +39,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f7f999',
+    backgroundColor: '#ffeca7',
     alignItems: 'center',
     justifyContent: 'center',
   },
