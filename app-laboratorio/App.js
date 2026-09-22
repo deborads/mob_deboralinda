@@ -12,6 +12,14 @@ function calcularMedia(aluno) {
   return (aluno.nota1 + aluno.nota2) / 2;
 }
 
+function situacao(media) {
+  if (media >= 6) {
+    return 'Aprovado';
+  }
+
+  return 'Em recuperacao';
+}
+
 export default function App() {
   const media = calcularMedia(eu);
 
@@ -23,6 +31,7 @@ export default function App() {
       <Text>Nota 1: {eu.nota1}</Text>
       <Text>Nota 2: {eu.nota2}</Text>
       <Text>Média: {media}</Text>
+      <Text>Situação: {situacao(media)}</Text>
     </View>
   );
 }
@@ -30,7 +39,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#d06fd7dc',
+    backgroundColor: '#f7f999',
     alignItems: 'center',
     justifyContent: 'center',
   },
