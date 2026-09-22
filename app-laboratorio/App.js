@@ -1,11 +1,17 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-const nome = 'Bora LULA';
+const eu = {
+  nome: 'Débora Dias',
+  idade: 17,
+  cidade: 'Cascavel',
+};
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>{nome}</Text>
+      <Text>Nome: {eu.nome}</Text>
+      <Text>Idade: {eu.idade}</Text>
+      <Text>Cidade: {eu.cidade}</Text>
     </View>
   );
 }
@@ -13,7 +19,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ff0000',
+    backgroundColor: '#57f0b8b4',
     alignItems: 'center',
     justifyContent: 'center',
   },
